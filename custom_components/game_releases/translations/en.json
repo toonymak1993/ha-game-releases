@@ -1,0 +1,43 @@
+{
+  "title": "Game Releases",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Enable Steam release feed",
+        "description": "Upcoming PC releases are loaded from the Steam storefront. No account or API key is required.",
+        "data": {
+          "days_ahead": "Days ahead",
+          "max_games": "Maximum releases"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Game Releases is already configured.",
+      "single_instance_allowed": "Only one Game Releases instance is supported."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Game release filters",
+        "description": "Changes are applied after the integration reloads.",
+        "data": {
+          "days_ahead": "Days ahead",
+          "max_games": "Maximum releases"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "upcoming_releases": {
+        "name": "Upcoming releases"
+      }
+    },
+    "calendar": {
+      "release_calendar": {
+        "name": "Release calendar"
+      }
+    }
+  }
+}

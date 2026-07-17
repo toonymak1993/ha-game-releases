@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a problem with the integration or Release Radar card
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Game Releases.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: v0.2.0
+    validations:
+      required: true
+  - type: input
+    id: home_assistant
+    attributes:
+      label: Home Assistant version
+      placeholder: 2026.7.2
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Remove private information before pasting logs.
+      render: text

@@ -1,0 +1,12 @@
+{
+  "domain": "game_releases",
+  "name": "Game Releases",
+  "codeowners": ["@toonymak1993"],
+  "config_flow": true,
+  "documentation": "https://github.com/toonymak1993/ha-game-releases",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/toonymak1993/ha-game-releases/issues",
+  "requirements": [],
+  "version": "0.2.0"
+}

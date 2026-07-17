@@ -1,0 +1,43 @@
+{
+  "title": "Spiele-Releases",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Steam-Releasefeed aktivieren",
+        "description": "Kommende PC-Releases werden direkt aus dem Steam-Store geladen. Ein Konto oder API-Schlüssel ist nicht erforderlich.",
+        "data": {
+          "days_ahead": "Tage im Voraus",
+          "max_games": "Maximale Anzahl Releases"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Spiele-Releases ist bereits eingerichtet.",
+      "single_instance_allowed": "Es wird nur eine Spiele-Releases-Instanz unterstützt."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Spiele-Releasefilter",
+        "description": "Änderungen werden nach dem Neuladen der Integration aktiv.",
+        "data": {
+          "days_ahead": "Tage im Voraus",
+          "max_games": "Maximale Anzahl Releases"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "upcoming_releases": {
+        "name": "Kommende Releases"
+      }
+    },
+    "calendar": {
+      "release_calendar": {
+        "name": "Releasekalender"
+      }
+    }
+  }
+}
